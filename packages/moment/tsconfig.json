@@ -1,0 +1,15 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": "./",
+    "declaration": true,
+    "declarationDir": "types",
+    "emitDeclarationOnly": true,
+    "paths": {
+      "@view/*": ["src/App/View/*"],
+      "@typing/*": ["src/@typing/*"]
+    }
+  },
+  "include": ["src/**/*", "react-app-env.d.ts"],
+  "exclude": ["node_modules"]
+}

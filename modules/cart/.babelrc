@@ -1,0 +1,16 @@
+{
+  "presets": [
+    "@babel/preset-react",
+    "@babel/preset-typescript"
+  ],
+  "plugins": [
+    ["module-resolver", {
+      "alias": {
+        "@domain": "./src/App/domain",
+        "@application": "./src/App/application",
+        "@services": "./src/App/services",
+        "@ui": "./src/App/ui"
+      }
+    }]
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "name": "root",
+  "private": true,
+  "scripts": {
+    "audit": "npx improved-yarn-audit --min-severity moderate --ignore-dev-deps",
+    "build": "npx yarn workspaces run build"
+  },
+  "dependencies": {
+    "react-scripts": "5.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "18.11.9",
+    "@types/styled-components": "5.1.26",
+    "audit-ci": "5.1.2",
+    "improved-yarn-audit": "3.0.0",
+    "lerna": "6.4.1",
+    "lerna-update-wizard": "1.1.2"
+  },
+  "license": "MIT",
+  "workspaces": [
+    "kernel",
+
+    "helpers/utils",
+
+    "library/kit",
+    "library/design",
+    "library/app",
+
+    "packages/moment",
+    "packages/numeral",
+
+    "widgets/category",
+
+    "modules/main",
+    "modules/valuation",
+    "modules/cart",
+    "modules/sign-in",
+
+    "app/client"
+  ]
+}

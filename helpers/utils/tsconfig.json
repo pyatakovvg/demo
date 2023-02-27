@@ -1,0 +1,13 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "types": ["node", "serviceworker"],
+    "outDir": "./lib",
+    "declaration": true,
+    "declarationDir": "./types",
+    "emitDeclarationOnly": false
+  },
+  "include": [
+    "src",
+  ]
+}

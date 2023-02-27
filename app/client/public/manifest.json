@@ -1,0 +1,9 @@
+{
+  "short_name": "SL",
+  "name": "SELLGAR",
+  "icons": [],
+  "start_url": ".",
+  "display": "minimal-ui",
+  "theme_color": "black",
+  "background_color": "white"
+}

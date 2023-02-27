@@ -1,0 +1,16 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": "./",
+    "declaration": true,
+    "declarationDir": "types",
+    "emitDeclarationOnly": true,
+    "paths": {
+      "@domain/*": ["src/domain/*"],
+      "@application/*": ["src/application/*"],
+      "@services/*": ["src/services/*"]
+    }
+  },
+  "exclude": ["node_modules"],
+  "include": ["src/**/*", "../kernel.d.ts"]
+}
