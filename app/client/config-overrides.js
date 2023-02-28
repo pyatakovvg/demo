@@ -49,7 +49,7 @@ module.exports = function override(config) {
     ...config.plugins,
 
     new WorkboxWebpackPlugin.InjectManifest({
-      swSrc: "./src/sw/service-worker.ts",
+      swSrc: "@library/workbox",
       swDest: "service-worker.js",
     }),
   ];

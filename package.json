@@ -22,6 +22,7 @@
 
     "helpers/utils",
 
+    "library/workbox",
     "library/kit",
     "library/design",
     "library/app",

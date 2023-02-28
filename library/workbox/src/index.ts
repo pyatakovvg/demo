@@ -1,9 +1,9 @@
 
+import { ExpirationPlugin } from 'workbox-expiration';
+import { CacheFirst, NetworkFirst } from 'workbox-strategies';
+import { clientsClaim, setCacheNameDetails } from 'workbox-core';
 import { registerRoute, NavigationRoute } from 'workbox-routing';
 import { precacheAndRoute, cleanupOutdatedCaches, createHandlerBoundToURL } from 'workbox-precaching';
-import { ExpirationPlugin } from 'workbox-expiration';
-import { clientsClaim, setCacheNameDetails } from 'workbox-core';
-import { CacheFirst, NetworkFirst } from 'workbox-strategies';
 
 
 declare var self: ServiceWorkerGlobalScope;
