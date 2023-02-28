@@ -37,6 +37,7 @@
     "modules/cart",
     "modules/sign-in",
 
-    "app/client"
+    "app/client-1",
+    "app/client-2"
   ]
 }

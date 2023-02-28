@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=375, initial-scale=1" />
+    <meta name="description" content="" />
+
+    <!-- CACHE GLOBAL ERROR -->
+    <style>
+        .container {
+            display: block;
+            border: 1px solid darkred;
+            border-radius: 6px;
+            padding: 16px 32px;
+            background: indianred;
+        }
+        .container + .container {
+            margin-top: 32px;
+        }
+        .text {
+            display: block;
+            font-size: 12px;
+            font-weight: 600;
+            color: white;
+        }
+        .text + .text {
+            margin-top: 16px;
+        }
+    </style>
+    <script defer>
+      window.addEventListener('error', (event) => {
+        const container = document.createElement('div');
+        const filePathContainer = document.createElement('p');
+        const messageContainer = document.createElement('p');
+
+        filePathContainer.innerText = event.filename;
+        filePathContainer.classList.add('text')
+
+        messageContainer.innerText = event.message;
+        messageContainer.classList.add('text');
+
+        container.appendChild(filePathContainer);
+        container.appendChild(messageContainer);
+
+        container.classList.add('container');
+
+        document.body.appendChild(container);
+      });
+    </script>
+    <!------------------------------------------------------>
+
+    <link rel="icon" href="%PUBLIC_URL%/favicon.svg" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/favicon.svg" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <script defer type="application/javascript" src="%PUBLIC_URL%/env.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+
+    <title>Приложение 1</title>
+
+  </head>
+  <body>
+    <main id="root"></main>
+  </body>
+</html>
