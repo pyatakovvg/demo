@@ -1,6 +1,5 @@
 
 export * as query from './query';
-export { default as SW } from './SW';
 export { default as uuid } from './uuid';
 export { default as sleep } from './sleep';
 export { default as isJSON } from './isJSON';
